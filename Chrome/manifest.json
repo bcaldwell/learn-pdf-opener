@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+
+    "name": "Learn pdf opener",
+    "description": "Opens pdfs in learn in a new tab",
+    "version": "2.0",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": ["index.js"],
+        "persistent": false
+    },
+    "commands": {
+        "open-pdf": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+M",
+                "windows": "Ctrl+Shift+M",
+                "mac": "Command+Shift+M",
+                "chromeos": "Ctrl+Shift+M",
+                "linux": "Ctrl+Shift+M"
+            },
+            "description": "Open pdf in new tab"
+        }
+    },
+    "permissions": [
+        "activeTab"
+   ]
+}

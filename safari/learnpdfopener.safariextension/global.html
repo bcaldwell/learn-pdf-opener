@@ -1,0 +1,21 @@
+<script>
+var baseUrl = "https://learn.uwaterloo.ca";
+// Set up the Listener
+safari.application.addEventListener("command", performCommand, false);
+
+// Function to perform when event is received
+function performCommand(e) {
+    // Make sure event comes from the button
+    if (safari.application.activeBrowserWindow.activeTab.url.indexOf(baseUrl) >= 0) {
+      safari.application.activeBrowserWindow.activeTab.page.dispatchMessage(e.command);
+    }
+}
+
+function newtab(msgEvent) {
+    if (msgEvent.name == 'openUrlInNewTab') {
+        safari.application.activeBrowserWindow.openTab().url = msgEvent.message;
+    }
+}
+
+safari.application.addEventListener('message', newtab, false);
+</script>
