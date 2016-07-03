@@ -7,9 +7,9 @@
 	<key>Builder Version</key>
 	<string>11601.5.17.1</string>
 	<key>CFBundleDisplayName</key>
-	<string>Learn pdf operner</string>
+	<string>learn-pdf-opener</string>
 	<key>CFBundleIdentifier</key>
-	<string>me.karanthukral.learnpdf</string>
+	<string>me.karanthukral.learn-pdf-opener</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -18,53 +18,35 @@
 	<string>1</string>
 	<key>Chrome</key>
 	<dict>
-		<key>Global Page</key>
-		<string>global.html</string>
 		<key>Toolbar Items</key>
 		<array>
 			<dict>
-				<key>Command</key>
-				<string>open-pdf</string>
-				<key>Identifier</key>
-				<string>open-pdf</string>
-				<key>Image</key>
-				<string>icon.png</string>
 				<key>Include By Default</key>
 				<true/>
 				<key>Label</key>
-				<string>Learn pdf opener</string>
+				<string>Learn PDF Opener</string>
 			</dict>
 		</array>
 	</dict>
-	<key>Content</key>
-	<dict>
-		<key>Scripts</key>
-		<dict>
-			<key>Start</key>
-			<array>
-				<string>open.js</string>
-			</array>
-		</dict>
-		<key>Whitelist</key>
-		<array>
-			<string>https://learn.uwaterloo.ca/*</string>
-		</array>
-	</dict>
 	<key>Description</key>
-	<string>Opens pdfs in learn in a new tab</string>
-	<key>DeveloperIdentifier</key>
-	<string>WYS6PCLZAG</string>
+	<string>Open Learn PDF in new tab</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
 	<dict>
 		<key>Website Access</key>
 		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>https://learn.uwaterloo.ca/*</string>
+			</array>
 			<key>Include Secure Pages</key>
 			<true/>
 			<key>Level</key>
-			<string>All</string>
+			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>https://github.com/benjamincaldwell/learn-pdf-opener</string>
 </dict>
 </plist>
