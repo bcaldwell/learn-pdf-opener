@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Benjamin Caldwell</string>
 	<key>Builder Version</key>
-	<string>11601.2.7.2</string>
+	<string>11601.6.17</string>
 	<key>CFBundleDisplayName</key>
 	<string>Learn pdf operner</string>
 	<key>CFBundleIdentifier</key>
@@ -60,10 +60,14 @@
 	<dict>
 		<key>Website Access</key>
 		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string></string>
+			</array>
 			<key>Include Secure Pages</key>
 			<true/>
 			<key>Level</key>
-			<string>All</string>
+			<string>Some</string>
 		</dict>
 	</dict>
 </dict>
